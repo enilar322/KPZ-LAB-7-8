@@ -18,7 +18,7 @@ jobs:
       - name: Install pnpm and build project
         run: |
           npm install -g pnpm
-          pnpm install
+          pnpm install --no-frozen-lockfile
           pnpm run build
 
       - name: Login to GitHub Container Registry
